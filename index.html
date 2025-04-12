@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatch Universe - Lüks Yatlar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Yacht Universe</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#menu">Markalar</a></li>
+                <li><a href="#shop">Satış</a></li>
+                <li><a href="#contact">İletişim</a></li>
+                <li><a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sepet Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close">×</span>
+            <h2>Sepetiniz</h2>
+            <div id="cart-items" class="cart-items"></div>
+            <div class="cart-total">
+                <strong>Toplam: </strong><span id="cart-total">0 €</span>
+            </div>
+            <button id="checkout">Ödeme Yap</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>⚓︎ Yacht Universe ⚓︎</h2>
+        <p>Hayalleriniz İçin Tasarlandı</p>
+        <a href="#shop" class="cta-button">Şimdi Keşfet</a>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="menu-header">
+            <h3>Markalarımız</h3>
+        </div>
+        <div class="menu-content">
+            <div class="coffee">
+                <div class="coffee-image">
+                    <img src="img/Azimut.jpg" alt="Azimut Yat">
+                </div>
+                <div class="coffee-body">
+                    <h2>Azimut Yat</h2>
+                </div>
+            </div>
+            <div class="coffee">
+                <div class="coffee-image">
+                    <img src="img/Ferretti.JPG" alt="Ferretti Yat">
+                </div>
+                <div class="coffee-body">
+                    <h2>Ferretti Yat</h2>
+                </div>
+            </div>
+            <div class="coffee">
+                <div class="coffee-image">
+                    <img src="img/SunSeeker.jpg" alt="Sunseeker Yat">
+                </div>
+                <div class="coffee-body">
+                    <h2>Sunseeker Yat</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop" id="shop">
+        <div class="shop-header">
+            <h3>Lüks Yatları Keşfedin</h3>
+        </div>
+        <div class="shop-box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/azimut-pro.jpg" alt="Azimut 80">
+                </div>
+                <div class="card-body">
+                    <label class="cash">500.000 €</label>
+                    <h3>Azimut 80</h3>
+                    <h4>Premium</h4>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/Azimuts.jpg" alt="Azimut 86 S">
+                </div>
+                <div class="card-body">
+                    <label class="cash">850.000 €</label>
+                    <h3>Azimut 86 S</h3>
+                    <h4>VIP</h4>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/Ferrettiss.jpg" alt="Ferretti 75 Golden">
+                </div>
+                <div class="card-body">
+                    <label class="cash">450.000 €</label>
+                    <h3>Ferretti 75 Golden</h3>
+                    <h4>VIP</h4>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/Ferrettttt.jpg" alt="Ferretti 720">
+                </div>
+                <div class="card-body">
+                    <label class="cash">350.000 €</label>
+                    <h3>Ferretti 720</h3>
+                    <h4>Premium</h4>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/sunskerr.jpg" alt="Sunseeker 95">
+                </div>
+                <div class="card-body">
+                    <label class="cash">1.700.000 €</label>
+                    <h3>Sunseeker 95</h3>
+                    <h4>VIP</h4>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/Sunseekerk.jpg" alt="Sunseeker 131">
+                </div>
+                <div class="card-body">
+                    <label class="cash">3.800.000 €</label>
+                    <h3>Sunseeker 131</h3>
+                    <h4>Lüks</h4>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/AzimutGrande.jpg" alt="Azimut's Grande">
+                </div>
+                <div class="card-body">
+                    <label class="cash">1.500.000 €</label>
+                    <h3>Azimut's Grande</h3>
+                    <h4>VIP</h4>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/Ferretti1000.jpg" alt="Ferretti 1000">
+                </div>
+                <div class="card-body">
+                    <label class="cash">2.200.000 €</label>
+                    <h3>Ferretti 1000</h3>
+                    <h4>Lüks</h4>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/azimut116-1.jpg" alt="Azimut Grande 116">
+                </div>
+                <div class="card-body">
+                    <label class="cash">3.670.000 €</label>
+                    <h3>Azimut Grande 116</h3>
+                    <h4>Lüks</h4>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/Sunsker.jpg" alt="Sunseeker 120">
+                </div>
+                <div class="card-body">
+                    <label class="cash">4.200.000 €</label>
+                    <h3>Sunseeker 120</h3>
+                    <h4>Lüks</h4>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2 id="contact">Bize Ulaşın</h2>
+        <form>
+            <input type="text" placeholder="Adınızı girin">
+            <input type="email" placeholder="E-posta adresinizi girin">
+            <textarea cols="30" rows="10" placeholder="Mesajınızı girin"></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+        <div id="footerBox"></div>
+        <div id="copyrightIcon">
+            <div id="copyright">
+                Hayalinizdeki yatları keşfetmek için bizi takip edin. © 2025 Yacht Universe
+            </div>
+            <div id="icons">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const cart = [];
+        let total = 0;
+
+        // Sepeti güncelle
+        function updateCart() {
+            const cartItems = document.getElementById('cart-items');
+            const cartCount = document.getElementById('cart-count');
+            const cartTotal = document.getElementById('cart-total');
+            cartItems.innerHTML = '';
+
+            cart.forEach((item, index) => {
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('cart-item');
+                itemElement.innerHTML = `
+                    <h4>${item.name}</h4>
+                    <span>${item.price}</span>
+                    <button onclick="removeFromCart(${index})">Kaldır</button>
+                `;
+                cartItems.appendChild(itemElement);
+            });
+
+            cartCount.textContent = cart.length;
+            cartTotal.textContent = total.toLocaleString() + ' €';
+        }
+
+        // Sepetten ürün kaldır
+        function removeFromCart(index) {
+            const price = parseFloat(cart[index].price.replace(/[.€]/g, '').replace(',', '.'));
+            total -= price;
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        // Sepete ekle
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.card');
+                const yachtName = card.querySelector('h3').innerText;
+                const yachtPrice = card.querySelector('.cash').innerText;
+                const priceValue = parseFloat(yachtPrice.replace(/[.€]/g, '').replace(',', '.'));
+
+                cart.push({ name: yachtName, price: yachtPrice });
+                total += priceValue;
+                updateCart();
+                alert(`${yachtName} sepete eklendi!`);
+            });
+        });
+
+        // Sepet modal işlevselliği
+        const modal = document.getElementById('cart-modal');
+        const cartIcon = document.getElementById('cart-icon');
+        const closeBtn = document.querySelector('.close');
+
+        cartIcon.onclick = () => {
+            modal.style.display = 'block';
+        };
+
+        closeBtn.onclick = () => {
+            modal.style.display = 'none';
+        };
+
+        window.onclick = (event) => {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        };
+
+        // Ödeme butonu
+        document.getElementById('checkout').addEventListener('click', () => {
+            if (cart.length === 0) {
+                alert('Sepetiniz boş!');
+            } else {
+                alert('Ödeme sayfasına yönlendiriliyorsunuz...');
+            }
+        });
+    </script>
+</body>
+</html>
